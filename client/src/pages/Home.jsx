@@ -107,7 +107,7 @@ export default function Home() {
           </p>
         </div>
         <div className="grid grid-cols-12 gap-4 mt-6">
-          <div className="col-span-12 md:col-span-4 text-center place-items-center">
+          <div className="col-span-12 md:col-span-4 text-center flex flex-col items-center">
             <img src="/images/calendar.png" alt="schedule your services" />
             <div className="text-white mt-4">
               <h3 className="text-lg font-semibold mb-2">
@@ -120,7 +120,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="col-span-12 md:col-span-4 text-center place-items-center">
+          <div className="col-span-12 md:col-span-4 text-center flex flex-col items-center">
             <img src="/images/keyhole.png" alt="keyhole" />
             <div className="text-white mt-4">
               <h3 className="text-lg font-semibold mb-2">We Clean & Care</h3>
@@ -131,7 +131,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="col-span-12 md:col-span-4 text-center place-items-center">
+          <div className="col-span-12 md:col-span-4 text-center flex flex-col items-center">
             <img src="/images/delivery.png" alt="delivery" />
             <div className="text-white mt-4">
               <h3 className="text-lg font-semibold mb-2">We Deliver</h3>
