@@ -1,0 +1,164 @@
+@import url("https://fonts.cdnfonts.com/css/nunito-sans");
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: dark --prefersdark;
+}
+
+@theme {
+  --color-Nav: rgba(38, 38, 38, 1);
+  --color-primary: rgba(98, 85, 236, 1);
+  --color-servicebg: #262626;
+  --color-footertext: rgba(246, 246, 246, 1);
+  --color-formtext: rgba(45, 46, 46, 1);
+  --color-adminOrderBg: rgba(137, 117, 39, 1);
+  --color-adminUserBg: rgba(124, 65, 145, 1);
+  --color-adminRevenueBg: rgba(67, 134, 138, 1);
+}
+
+:root {
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --Nav: rgba(38, 38, 38, 1);
+  --primary: rgba(98, 85, 236, 1);
+  --servicebg: #262626;
+  --footertext: rgba(246, 246, 246, 1);
+  --formtext: rgba(45, 46, 46, 1);
+  --adminOrderBg: rgba(137, 117, 39, 1);
+  --adminUserBg: rgba(124, 65, 145, 1);
+  --adminRevenueBg: rgba(67, 134, 138, 1);
+}
+
+.auth-layout {
+  background-image: url("/images/image 9.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: rgb(10, 10, 10);
+}
+
+.cardGradient {
+  background: linear-gradient(
+    90deg,
+    rgba(69, 69, 69, 1) 0%,
+    rgba(98, 85, 236, 1) 100%
+  );
+}
+
+.auth-background {
+  background-image: url("/images/image 9.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #514b82;
+  animation: l20-1 0.8s infinite linear alternate, l20-2 1.6s infinite linear;
+}
+@keyframes l20-1 {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+  }
+  12.5% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%,
+      100% 0%
+    );
+  }
+  25% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      100% 100%,
+      100% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      50% 50%,
+      0 0,
+      50% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+  62.5% {
+    clip-path: polygon(
+      50% 50%,
+      100% 0,
+      100% 0%,
+      100% 0%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+  75% {
+    clip-path: polygon(
+      50% 50%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      50% 50%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      50% 100%,
+      0% 100%
+    );
+  }
+}
+@keyframes l20-2 {
+  0% {
+    transform: scaleY(1) rotate(0deg);
+  }
+  49.99% {
+    transform: scaleY(1) rotate(135deg);
+  }
+  50% {
+    transform: scaleY(-1) rotate(0deg);
+  }
+  100% {
+    transform: scaleY(-1) rotate(-135deg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .auth-layout {
+    background-image: none;
+  }
+}
