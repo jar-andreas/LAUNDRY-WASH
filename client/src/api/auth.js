@@ -80,4 +80,12 @@ export const updateProfile = async ({ formData, accessToken }) => {
   });
 };
 
+export const uploadAvatar = async ({ formData, accessToken }) => {
+  return await axiosClient.patch("/user/upload-avatar", formData, {
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
+  });
+};
+
 
