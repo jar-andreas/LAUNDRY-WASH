@@ -34,28 +34,30 @@ export default function Nav() {
               </NavLink>
             ) : null}
           </div>
-          {user ? (
-            <UserAvatar />
-          ) : (
-            <>
-              <div className="hidden md:flex gap-4 items-center text-xs">
-                <Link
-                  to="/signup"
-                  className="text-white bg-(--primary) px-4 py-2 rounded-full"
-                >
-                  Sign Up
-                </Link>
-                <Link
-                  to="/login"
-                  className="text-(--primary) border border-(--primary) px-4 py-2 rounded-full"
-                >
-                  Log In
-                </Link>
-              </div>
-            </>
-          )}
-          <div className="md:hidden">
-            <Drawer handleLogout={handleLogout} />
+          <div className="flex items-center gap-4">
+            {user ? (
+              <UserAvatar />
+            ) : (
+              <>
+                <div className="hidden md:flex gap-4 items-center text-xs">
+                  <Link
+                    to="/signup"
+                    className="text-white bg-(--primary) px-4 py-2 rounded-full"
+                  >
+                    Sign Up
+                  </Link>
+                  <Link
+                    to="/login"
+                    className="text-(--primary) border border-(--primary) px-4 py-2 rounded-full"
+                  >
+                    Log In
+                  </Link>
+                </div>
+              </>
+            )}
+            <div className="md:hidden">
+              <Drawer handleLogout={handleLogout} />
+            </div>
           </div>
         </div>
       </div>
