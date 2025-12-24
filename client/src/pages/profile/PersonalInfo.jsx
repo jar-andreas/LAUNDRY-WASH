@@ -49,7 +49,7 @@ export default function PersonalInfo() {
             <input
               type="text"
               {...register("fullname")}
-              className="input input-md w-full bg-white text-xs py-2 px-2 rounded-lg"
+              className="input input-md w-full bg-white text-black text-xs py-2 px-2 rounded-lg"
               defaultValue={user?.fullname || ""}
             />
           </label>
@@ -63,7 +63,7 @@ export default function PersonalInfo() {
             <input
               type="email"
               {...register("email")}
-              className="input input-md w-full bg-white text-xs py-2 px-2 rounded-lg"
+              className="input input-md w-full bg-white text-black text-xs py-2 px-2 rounded-lg"
               defaultValue={user?.email || ""}
             />
           </label>
@@ -75,11 +75,11 @@ export default function PersonalInfo() {
             <input
               type="tel"
               {...register("phone")}
-              className="input input-md w-full bg-white text-xs py-2 px-2 rounded-lg"
+              className="input input-md w-full bg-white text-black text-xs py-2 px-2 rounded-lg"
               defaultValue={user?.phone || ""}
             />
           </label>
-          <p className="text-red-500 text-xs mt-1">{errors.phone?.message}</p>f
+          <p className="text-red-500 text-xs mt-1">{errors.phone?.message}</p>
         </div>
         <div className="grid grid-cols-12 gap-4 lg:items-center mt-8">
           <div className="col-span-12 lg:col-span-6 text-center border border-white rounded-full px-4 py-2">

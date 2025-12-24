@@ -24,7 +24,7 @@ export default function Table({ filterBookings }) {
       case "status":
         return (
           <div
-            className={`capitalize badge font-semibold rounded-sm py-3 px-4 ${
+            className={`capitalize badge font-semibold text-xs rounded-xs py-3 px-4 ${
               orderStatusColors[booking?.status]
             }`}
           >
@@ -32,7 +32,7 @@ export default function Table({ filterBookings }) {
           </div>
         );
       case "total":
-        return <p>&#x20A6; {booking?.total || 0}</p>;
+        return <p className="text-xs">&#x20A6; {booking?.total || 0}</p>;
       default:
         return cellValue;
     }
