@@ -38,7 +38,6 @@ export default function Nav() {
             <UserAvatar />
           ) : (
             <>
-              <div></div>
               <div className="hidden md:flex gap-4 items-center text-xs">
                 <Link
                   to="/signup"

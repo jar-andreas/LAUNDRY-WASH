@@ -55,7 +55,7 @@ export default function Signup() {
               type="text"
               placeholder="John Doe"
               {...register("fullname")}
-              className="input input-md w-full bg-white text-xs py-2 px-2 rounded-lg"
+              className="input input-md w-full bg-white text-black text-xs py-2 px-2 rounded-lg"
             />
           </label>
           <p className="text-red-500 text-xs mt-1">
@@ -69,7 +69,7 @@ export default function Signup() {
               type="email"
               placeholder="Johndoe@email.com"
               {...register("email")}
-              className="input input-md w-full bg-white text-xs py-2 px-2 rounded-lg"
+              className="input input-md w-full bg-white text-black text-xs py-2 px-2 rounded-lg"
             />
           </label>
           <p className="text-red-500 text-xs mt-1">{errors.email?.message}</p>
@@ -81,7 +81,7 @@ export default function Signup() {
               type="tel"
               placeholder="+23412345678"
               {...register("phone")}
-              className="input input-md w-full bg-white text-xs py-2 px-2 rounded-lg"
+              className="input input-md w-full bg-white text-black text-xs py-2 px-2 rounded-lg"
             />
           </label>
           <p className="text-red-500 text-xs mt-1">{errors.phone?.message}</p>
@@ -92,7 +92,7 @@ export default function Signup() {
             type={revealPassword ? "text" : "password"}
             placeholder="Enter your password here"
             {...register("password")}
-            className="input input-md w-full bg-white text-xs py-2 px-2 rounded-lg"
+            className="input input-md w-full bg-white text-black text-xs py-2 px-2 rounded-lg"
           />
           <p className="text-red-500 text-xs mt-1">
             {errors.password?.message}

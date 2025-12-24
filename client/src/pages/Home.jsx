@@ -54,7 +54,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-6 grid grid-cols-12 gap-4">
+        <div className="container mx-auto py-6 grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-4 bg-(--servicebg) rounded-lg p-2">
             <img src="/images/image 7.png" alt="wash & fold" />
             <div className="text-white mt-4">
@@ -176,7 +176,7 @@ export default function Home() {
             Real experiences from people who trust us with their clothes every
             week.
           </p>
-          <section className="container mx-auto px-4 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-10 py-15">
+          <section className="container mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-10 py-15">
             <div className="bg-(--servicebg) cardGradient rounded-tl-[35px] rounded-tr-[35px] rounded-br-[40px] rounded-bl-[40px] cursor-pointer">
               <div className="p-5 text-sm  bg-(--servicebg) rounded-tr-[30px] rounded-tl-[30px]  rounded-br-[30px]">
                 <span className="flex gap-3 pb-3">

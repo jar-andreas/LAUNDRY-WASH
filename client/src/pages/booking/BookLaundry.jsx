@@ -127,12 +127,12 @@ export default function LaundryPickup() {
                 </div>
                 <div className="bg-(--servicebg) px-2 py-4 rounded-lg">
                   <fieldset className="fieldset">
-                    <legend className="fieldset-legend text-white">
+                    <legend className="fieldset-legend text-white w-full">
                       Select Service
                     </legend>
                     <select
                       defaultValue=""
-                      className="select w-full bg-white rounded-sm"
+                      className="select w-full bg-white text-black rounded-sm"
                       {...register("serviceType")}
                     >
                       <option value="" disabled selected>
@@ -154,7 +154,7 @@ export default function LaundryPickup() {
                 </div>
               </div>
 
-              <div>
+              <div className="container mx-auto">
                 <h2 className=" font-semibold text-white mb-2">
                   Pick-Up information
                 </h2>
@@ -165,7 +165,7 @@ export default function LaundryPickup() {
                       type="text"
                       placeholder="Enter Address"
                       {...register("pickUpAddress")}
-                      className="bg-white w-full rounded-sm text-xs px-2 py-3 mt-1"
+                      className="bg-white text-black w-full rounded-sm text-xs px-2 py-3 mt-1"
                     />
                     {errors?.pickUpAddress && (
                       <p className="text-red-500 text-xs mt-1">
@@ -180,7 +180,7 @@ export default function LaundryPickup() {
                       type="tel"
                       placeholder="+234803878218"
                       {...register("pickUpPhone")}
-                      className="bg-white w-full rounded-sm text-xs px-2 py-3 mt-1"
+                      className="bg-white text-black w-full rounded-sm text-xs px-2 py-3 mt-1"
                     />
                     {errors?.pickUpPhone && (
                       <p className="text-red-500 text-xs mt-1">
@@ -195,7 +195,7 @@ export default function LaundryPickup() {
                       <input
                         type="date"
                         {...register("date")}
-                        className="bg-white w-full rounded-sm text-xs px-2 py-3 mt-1"
+                        className="bg-white text-black w-full rounded-sm text-xs px-2 py-3 mt-1"
                       />
                       {errors?.date && (
                         <p className="text-red-500 text-xs mt-1">
@@ -207,7 +207,7 @@ export default function LaundryPickup() {
                     <div className="col-span-12 lg:col-span-6">
                       <span className="text-xs text-white">Pick-up Time</span>
                       <select
-                        className="bg-white w-full rounded-sm text-xs px-2 py-3 mt-1"
+                        className="bg-white text-black w-full rounded-sm text-xs px-2 py-3 mt-1"
                         {...register("time")}
                       >
                         <option value="" disabled selected>
@@ -231,7 +231,7 @@ export default function LaundryPickup() {
                 </div>
               </div>
 
-              <div>
+              <div className="container mx-auto">
                 <h2 className=" font-semibold text-white mb-2">
                   Delivery information
                 </h2>
@@ -243,7 +243,7 @@ export default function LaundryPickup() {
                       type="text"
                       placeholder="Same as pick-up"
                       {...register("deliveryAddress")}
-                      className="bg-white w-full rounded-sm text-xs px-2 py-3 mt-1"
+                      className="bg-white text-black w-full rounded-sm text-xs px-2 py-3 mt-1"
                     />
                     {errors?.deliveryAddress && (
                       <p className="text-red-500 text-xs mt-1">
@@ -258,7 +258,7 @@ export default function LaundryPickup() {
                       type="tel"
                       placeholder="+234803878218"
                       {...register("deliveryPhone")}
-                      className="bg-white w-full rounded-sm text-xs px-2 py-3 mt-1"
+                      className="bg-white text-black w-full rounded-sm text-xs px-2 py-3 mt-1"
                     />
                     {errors?.deliveryPhone && (
                       <p className="text-red-500 text-xs mt-1">
@@ -269,7 +269,7 @@ export default function LaundryPickup() {
                 </div>
               </div>
 
-              <div>
+              <div className="container mx-auto">
                 <h2 className=" font-semibold text-white mb-2">Add item</h2>
 
                 <div className="grid grid-cols-12 gap-2 lg:items-center mt-2 bg-(--servicebg) px-2 py-4 rounded-lg">
@@ -278,7 +278,7 @@ export default function LaundryPickup() {
                       Shirt (NGN 900 per)
                     </legend>
                     <select
-                      className="select w-full bg-white rounded-sm"
+                      className="select w-full bg-white text-black rounded-sm"
                       defaultValue=""
                       {...register("shirt")}
                     >
@@ -298,7 +298,7 @@ export default function LaundryPickup() {
                       Trouser (NGN 700 per)
                     </legend>
                     <select
-                      className="select w-full bg-white rounded-sm"
+                      className="select w-full bg-white text-black rounded-sm"
                       defaultValue=""
                       {...register("trouser")}
                     >
@@ -318,7 +318,7 @@ export default function LaundryPickup() {
                       Senator (NGN 1,200 per)
                     </legend>
                     <select
-                      className="select w-full bg-white rounded-sm"
+                      className="select w-full bg-white text-black rounded-sm"
                       defaultValue=""
                       {...register("senator")}
                     >
@@ -338,7 +338,7 @@ export default function LaundryPickup() {
                       Native (NGN 900 per)
                     </legend>
                     <select
-                      className="select w-full bg-white rounded-sm"
+                      className="select w-full bg-white text-black rounded-sm"
                       defaultValue=""
                       {...register("native")}
                     >
@@ -357,7 +357,7 @@ export default function LaundryPickup() {
                       Duvet (NGN 1,500 per)
                     </legend>
                     <select
-                      className="select w-full bg-white rounded-sm"
+                      className="select w-full bg-white text-black rounded-sm"
                       defaultValue=""
                       {...register("duvet")}
                     >
@@ -376,7 +376,7 @@ export default function LaundryPickup() {
                       Special Item (NGN 2,000 per)
                     </legend>
                     <select
-                      className="select w-full bg-white rounded-sm"
+                      className="select w-full bg-white text-black rounded-sm"
                       defaultValue=""
                       {...register("specialItem")}
                     >
@@ -393,7 +393,7 @@ export default function LaundryPickup() {
                 </div>
               </div>
 
-              <div>
+              <div className="container mx-auto">
                 <h2 className=" font-semibold text-white mb-2">Pricing</h2>
                 <div className="bg-(--servicebg) px-2 py-4 rounded-lg">
                   <div>
@@ -402,7 +402,7 @@ export default function LaundryPickup() {
                       type="number"
                       placeholder="&#x20A6; 0.00"
                       {...register("total")}
-                      className="bg-white w-full rounded-sm text-xs px-2 py-3 mt-1"
+                      className="bg-white text-black w-full rounded-sm text-xs px-2 py-3 mt-1"
                     />
                   </div>
                 </div>

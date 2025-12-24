@@ -152,7 +152,7 @@ export default function BookingSummary() {
           <div>
             <h2 className=" font-semibold text-white mb-1">Pricing</h2>
             <section className="space-y-2">
-              <div className="flex justify-between items-center bg-white text-black px-3 py-2 rounded-full">
+              <div className="flex justify-between items-center bg-white text-black px-3 py-3 rounded-full">
                 <p className="text-xs">Total Price</p>
                 <h1 className="font-semibold text-xs">
                   ₦ {bookingForm?.total}
