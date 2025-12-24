@@ -62,6 +62,15 @@ export default function Drawer({ handleLogout }) {
                   >
                     Book Laundry
                   </Link>
+                  {user?.role === "admin" && (
+                    <Link
+                      to="/admin"
+                      onClick={() => setIsOpen(false)}
+                      className="font-medium text-xl"
+                    >
+                      Admin
+                    </Link>
+                  )}
                   <a
                     href="#"
                     onClick={handleLogout}
