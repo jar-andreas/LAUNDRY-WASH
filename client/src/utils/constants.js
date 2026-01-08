@@ -146,7 +146,7 @@ export const adminActivitiesColumn = [
   { name: "PAID", uid: "paidAt" },
   { name: "STATUS", uid: "status" },
   { name: "AMOUNT", uid: "amount" },
-  { name: "ACTION", uid: "action" },
+  // { name: "ACTION", uid: "action" },
 ];
 
 export const adminUserColumn = [
