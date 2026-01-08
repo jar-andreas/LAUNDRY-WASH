@@ -3,8 +3,8 @@ export default function Footer() {
   const { user } = useAuth();
   return (
     <>
-      <div className="container mx-auto px-4 py-6 bg-(--servicebg) mt-18">
-        <div className="flex flex-col mt-6 md:flex-row items-center justify-between text-xs text-white space-y-4">
+      <div className="container mx-auto px-4 mt-18 py-6 bg-(--servicebg)">
+        <div className="flex flex-col md:flex-row mt-6 items-center justify-between text-xs text-white space-y-4">
           {user ? (
             <div className="flex items-center gap-2">
               <img

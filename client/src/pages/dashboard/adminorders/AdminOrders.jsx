@@ -34,7 +34,7 @@ export default function AdminOrders() {
 
   return (
     <div className="container p-4 mx-auto text-white mt-4">
-      <h1 className="text-lg font-bold mb-10">Orders</h1>
+      <h1 className="text-lg badge font-bold mb-10">Orders</h1>
 
       {isPending ? (
         <DashboardCardSkeleton />

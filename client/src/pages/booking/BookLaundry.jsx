@@ -105,7 +105,7 @@ export default function LaundryPickup() {
     localStorage.setItem("laundryBookingForm", JSON.stringify(data));
     setBookingForm(data);
     navigate("/book-laundry/booking-summary");
-  };
+  }; 
 
   return (
     <>
@@ -185,7 +185,7 @@ export default function LaundryPickup() {
                     )}
                   </div>
 
-                  {/* <div className="grid grid-cols-12 gap-4 lg:items-center mt-2">
+                  <div className="grid grid-cols-12 gap-4 lg:items-center mt-2">
                     <div className="col-span-12 lg:col-span-6">
                       <span className="text-xs text-white">Pick-up Date</span>
                       <input
@@ -212,46 +212,6 @@ export default function LaundryPickup() {
 
                         {pickUpTimeData.map((time, index) => (
                           <option key={index} value={time}>
-                            {time}
-                          </option>
-                        ))}
-                      </select>
-
-                      {errors?.time && (
-                        <p className="text-red-500 text-xs mt-1">
-                          {errors.time.message}
-                        </p>
-                      )}
-                    </div>
-                  </div> */}
-                  <div className="grid grid-cols-12 gap-4 lg:items-center mt-2">
-                    <div className="col-span-12 lg:col-span-6">
-                      <span className="text-xs text-white">Pick-up Date</span>
-                      <input
-                        type="date"
-                        {...register("date")}
-                        className="bg-white text-black w-full rounded-sm text-xs px-2 py-3 mt-1 h-10"
-                      />
-                      {errors?.date && (
-                        <p className="text-red-500 text-xs mt-1">
-                          {errors.date.message}
-                        </p>
-                      )}
-                    </div>
-
-                    <div className="col-span-12 lg:col-span-6">
-                      <span className="text-xs text-white">Pick-up Time</span>
-                      <select
-                        {...register("time")}
-                        defaultValue=""
-                        className="bg-white text-black w-full rounded-sm text-xs px-2 py-3 mt-1 h-10"
-                      >
-                        <option value="" disabled>
-                          Select Pick-up Time
-                        </option>
-
-                        {pickUpTimeData.map((time) => (
-                          <option key={time} value={time}>
                             {time}
                           </option>
                         ))}

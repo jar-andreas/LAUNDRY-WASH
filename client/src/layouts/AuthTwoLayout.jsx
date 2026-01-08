@@ -8,7 +8,7 @@ export default function AuthTwoLayout() {
         <Link to="/" className="container mx-auto px-4 py-6 flex flex-col items-center">
           <img
             src="/images/Frame 57.png"
-            alt="Logo"
+            alt="Log o"
             className="w-[350px] mb-12"
           />
         </Link>

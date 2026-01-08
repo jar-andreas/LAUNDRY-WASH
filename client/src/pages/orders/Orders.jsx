@@ -21,12 +21,16 @@ export default function Orders() {
     queryFn: () => getBookings(searchParams, accessToken),
   });
 
+
+  
+
   const { bookings, pagination } = data?.data?.data || {};
   const { handlePageChange, totalPages, hasMore, currentPage } = usePaginate({
     totalPages: pagination?.totalPages || 1,
     hasMore: pagination?.hasMore || false,
     currentPage: pagination?.currentPage || 1,
   });
+    console.log("databooking", pagination);
 
   const handleTabSwitch = (tabName) => {
     setActiveTab(tabName);
